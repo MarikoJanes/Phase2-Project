@@ -1,0 +1,30 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Classic Egg Sandwich",
+        "image": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/japanese-egg-salad-sandwich.jpg",
+        "ingredients": ["2 eggs", "salt", "pepper", "bread", "mayonnaise"],
+        "description": {
+            "step1": "boil 2 eggs for 8 mins",
+            "step2": "break the boiled eggs in small pieces",
+            "step3": "add 1/4 teaspoon of salt, sprinkle some peppers and add 3 tablespoon of mayonnaise and mix all together",
+            "step4": "Spread on your favorite toast and Enjoy!"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Classic Deviled Eggs",
+        "image": "https://www.foodnetwork.com/content/dam/images/food/video/2019/4/19/0/ci0103-classic-deviled-eggs.jpg",
+        "ingredients": ["6 eggs", "1/4 cup mayonnaise", "1 teaspoon white vinegar", "1 teaspoon yellow mustard", "1/8 teaspoon salt", "Freshly ground black pepper", "Smoked Spanish paprika, for garnish"],
+        "description":{
+            "step1": "Boil 6 eggs on high heat for 10 minutes",
+            "step2": "Rinse under cold water continuously for 1 minute and carefully peel egg shells",
+            "step3": "Slice the eggs in half lengthwise and remove yolks to a medium bowl",
+            "step4": "Mash the yolks into a fine crumble using a fork. Add mayonnaise, vinegar, mustard, salt, and pepper, and mix well",
+            "step5": "place the whites on a serving platter and evenly disperse heaping teaspoons of the yolk mixture into the egg whites",
+            "step6": "Sprinkle with paprika and Enjoy!"
+        }
+      }
+    ]
+  }
