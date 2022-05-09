@@ -6,7 +6,7 @@
         "image": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/japanese-egg-salad-sandwich.jpg",
         "ingredients": ["2 eggs", "salt", "pepper", "bread", "mayonnaise"],
         "description": {
-            "step1": "boil 2 eggs for 8 mins",
+            "step1": "boil 2 eggs on medium heat for 8 mins",
             "step2": "break the boiled eggs in small pieces",
             "step3": "add 1/4 teaspoon of salt, sprinkle some peppers and add 3 tablespoon of mayonnaise and mix all together",
             "step4": "Spread on your favorite toast and Enjoy!"
@@ -24,6 +24,108 @@
             "step4": "Mash the yolks into a fine crumble using a fork. Add mayonnaise, vinegar, mustard, salt, and pepper, and mix well",
             "step5": "place the whites on a serving platter and evenly disperse heaping teaspoons of the yolk mixture into the egg whites",
             "step6": "Sprinkle with paprika and Enjoy!"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Egg Drop Soup",
+        "image": "https://www.gimmesomeoven.com/wp-content/uploads/2014/01/Egg-Drop-Soup-Recipe-4-1.jpg",
+        "ingredients": ["1 cup chicken broth", "¼ teaspoon soy sauce", "¼ teaspoon sesame oil", "1 teaspoon cornstarch", "2 teaspoons water", "1 egg, beaten", "⅛ teaspoon salt, ", "1 teaspoon chopped fresh chives"],
+        "description":{
+            "step1": "Combine chicken broth, soy sauce, and sesame oil in a small saucepan. Bring to a boil on high heat",
+            "step2": "Stir together cornstarch and water to dissolve cornstarch; pour into the boiling broth", 
+            "step3": "Lower to medium heat and pour in beaten egg while stirring gently",
+            "step4": "Once the egg is cooked, season with salt and pepper. Sprinkle with chives and Enjoy!"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Herb & Cheese Scrambled Eggs",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Herb-Cheese-Scrambled-Eggs_EXPS_BBBZ16_149153_C07_08_5b.jpg?resize=700,700",
+        "ingredients": ["8 large eggs", "1/2 cup 2% milk", "4 ounces cream cheese, softened", "1 tablespoon minced fresh parsley", "1 tablespoon minced chives", "1/2 teaspoon minced fresh thyme", "⅛ teaspoon salt, ", "1/8 teaspoon white pepper" , "1 tablespoon butter ", "Additional minced fresh herbs"],
+        "description":{
+            "step1": "Whisk together the first eight ingredients.",
+            "step2": "In a large skillet pan, heat butter over medium heat.", 
+            "step3": "Pour in egg mixture; cook and stir until eggs are thickened and no liquid egg remains. ",
+            "step4": "Sprinkle with additional minced herbs and Enjoy! "
+        }
+      },
+      {
+        "id": 5,
+        "name": "Cheesy Egg Puffs",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Cheesy-Egg-Puffs_exps17466_CW143433C03_11_2b.jpg?fit=700,1024",
+        "ingredients": ["1/2 pound sliced fresh mushrooms", "4 green onions, chopped", "1 tablespoon plus 1/2 cup butter, cubed, divided", "1/2 cup all-purpose flour", "1 teaspoon baking powder", "1/2 teaspoon salt", "⅛ teaspoon salt, ", "10 large eggs, lightly beaten" , "4 cups shredded Monterey Jack cheese", "2 cups 4% cottage cheese"],
+        "description":{
+            "step1": "In a large bowl, combine the flour, baking powder and salt",
+            "step2": "In a skillet, saute the mushrooms and onions in 1 tablespoon butter until tender.", 
+            "step3": "In another bowl, combine eggs and cheeses. Melt remaining 1/2 cup butter; add to egg mixture. Stir into dry ingredients along with mushroom mixture.",
+            "step4": "Fill greased muffin cups three-fourths full. Bake at 350° for 35-40 minutes or until a knife inserted in the center comes out clean.",
+            "step5": "Carefully run the knife around the edge of muffin cups, serve and Enjoy!"
+        }
+      },
+      {
+        "id": 6,
+        "name": "French Omelet",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/French-Omelet_EXPS_HCK19_25837_C06_22_3b-9.jpg?fit=700,1024",
+        "ingredients": ["2 large eggs, room temperature", "4 large egg whites, room temperature", "1/4 cup fat-free milk", "1/8 teaspoon salt", "1/8 teaspoon pepper", "1/4 cup cubed fully cooked ham", "1 tablespoon chopped onion", "1 tablespoon chopped green pepper" , "1/4 cup shredded reduced-fat cheddar cheese"],
+        "description":{
+            "step1": "Whisk together the first 5 ingredients.",
+            "step2": "On a medium heat , Pour in egg mixture in your pan.", 
+            "step3": "As eggs set, push cooked portions toward the center, letting uncooked eggs flow underneath",
+            "step4": "When eggs are thickened and no liquid egg remains, top 1 half with remaining ingredients. ",
+            "step5": "Fold omelet in half and Enjoy!"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Hard Boiled Egg Casserole ",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Hard-Boiled-Egg-Casserole_exps4564_BB133217B05_31_9b_RMS.jpg?fit=700,1024",
+        "ingredients": ["10 hard-boiled large eggs, chopped", "1-1/2 cups diced celery", "2/3 cup mayonnaise", "1/2 cup chopped pecans or walnuts", "2 tablespoons chopped green pepper", "1 teaspoon finely chopped onion", "1/2 teaspoon salt", "1/4 teaspoon pepper" , "1 cup shredded cheddar cheese"," 1/2 cup crushed potato chips" ],
+        "description":{
+            "step1": "In a bowl, combine eggs, celery, mayonnaise, nuts, green pepper, onion, salt and pepper; mix well.",
+            "step2": "Pour into a greased 11x7-in. baking dish.", 
+            "step3": "Sprinkle with cheese and potato chips.",
+            "step4": "Bake, uncovered, at 375° for 25 minutes or until heated through.",
+            "step5": "Serve and Enjoy!"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Fluffy Scrambled Eggs ",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Fluffy-Scrambled-Eggs_exps12235_SD143206C04_08_3bC_RMS.jpg?fit=700,1024",
+        "ingredients": ["6 large eggs", "1/4 cup evaporated milk or half-and-half cream", "1/4 teaspoon salt", "1/8 teaspoon pepper", "1 tablespoon canola oil", "2 tablespoons process cheese sauce"],
+        "description":{
+            "step1": "In a bowl, whisk eggs, milk, salt and pepper.",
+            "step2": "On a medium heat, with oil; pour in egg mixture.", 
+            "step3": "Add and stir in cheese sauce.",
+            "step4": "Cook eggs until thickened and Enjoy!"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Perfect Sunny Side up egg ",
+        "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/3/1/1/KC1213H_Trick-to-not-over-cooking-a-fried-egg_s4x3.jpg.rend.hgtvcom.616.462.suffix/1488393819612.jpeg",
+        "ingredients": ["1 teaspoon olive oil", "2 large eggs ", "1/8 teaspoon salt", "1/8 teaspoon pepper", "Toast, for serving, (optional)"],
+        "description":{
+            "step1": "Crack an egg into and slowly add it to the medium heat skillet. ",
+            "step2": "Cover with a tight lid and cook, uninterrupted, until the whites are completely set but the yolks are still runny, 2 to 2 1/2 minutes.", 
+            "step3": "Season with salt and pepper.",
+            "step4": "Slide the eggs out of the skillet onto your favorite toast and Enjoy! "
+        }
+      },
+      {
+        "id": 10,
+        "name": "Four Cheese Baked Eggs",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Four-Cheese-Baked-Eggs_EXPS_THCA17_50025_B11_03_4b-2.jpg?fit=700,1024",
+        "ingredients": ["1 cup whole-milk ricotta cheese", "3 ounces cream cheese, softened", "7 large eggs", "6 tablespoons butter, melted", "1/2 teaspoon salt", "1/4 teaspoon pepper", "3 tablespoons all-purpose flour","1/2 teaspoon baking powder", "3 cups grated Gruyere or Swiss cheese", "2 tablespoons minced chives or chopped green onions", "1/4 cup shredded Parmesan cheese" ],
+        "description":{
+            "step1": "Preheat the oven to 350° and Beat ricotta and cream cheese until smooth.",
+            "step2": "Add eggs, butter, salt and pepper; beat until blended. ", 
+            "step3": "In another bowl, whisk flour with baking powder and add to egg mixture.",
+            "step4": "Stir in Gruyere and chives.",
+            "step5": "Pour in all mixture in baking pan and sprinkle with Parmesan on top.", 
+            "step6": "Bake, uncovered for 25-30 minutes.",
+            "step7": "Let stand 10 minutes before cutting and Enjoy! "
         }
       }
     ]
