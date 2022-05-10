@@ -1,15 +1,20 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useHistory } from "react-router-dom";
+import SingleRecipe from './SingleRecipe';
 
 function Slideshow({recipeData}) {
     
+    const history = useHistory();
+    
+
     const eggImages = recipeData.map(recipe => {
         return <div key={recipe.id} ><img onClick={handleClick} id={recipe.id} style={{width: "200px", height: "200px",}} src={recipe.image} alt={recipe.name}/></div>
     })
 
     function handleClick(e) {
-      console.log(e.target.id);
+      history.push(`/recipes/${e.target.id}`)
     }
 
     const responsive = {
@@ -32,7 +37,8 @@ function Slideshow({recipeData}) {
 
 
   return (
-    <Carousel
+    <div>
+      <Carousel
         swipeable={false}
         draggable={false}
         showDots={true}
@@ -52,6 +58,7 @@ function Slideshow({recipeData}) {
     >
         {eggImages}
     </Carousel>
+    </div>
   )
 }
 

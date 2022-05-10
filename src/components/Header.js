@@ -9,9 +9,9 @@ const linkStyles = {
     width: "50px",
     padding: "12px",
     margin: "0 6px 6px",
-    background: "blue",
+    background: "#FFB72B",
     textDecoration: "none",
-    color: "white",
+    color: "#F7F7F7",
   };
 
 function Header() {

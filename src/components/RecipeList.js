@@ -1,28 +1,29 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react';
+import { Link, Route } from "react-router-dom";
+import SingleRecipe from './SingleRecipe';
 
-function RecipeList() {
-    const [recipeData, setRecipeData] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:4000/recipes")
-    .then(res => res.json())
-    .then(data => {
-      setRecipeData(data)
-    });
-    }, []);
+function RecipeList({recipeData}) {
+ 
 
     const lists = recipeData.map(egg => {
         return (
           <li key={egg.id} className="card">
-          {egg.name}
-          <img style={{height: "236.29px"}} src={egg.image} alt={egg.name} />
+          <Link to={`/recipes/${egg.id}`}>
+            {egg.name}
+            <img style={{height: "236.29px"}} src={egg.image} alt={egg.name} />
+          </Link> 
           </li>
         )
         
       })
 
   return (
-    <div className='cards'>{lists}</div>
+    <div className='cards'>
+        {lists}
+        {/* <Route path={`${match.url}/recipes/${id}`}>
+            <SingleRecipe />
+      </Route> */}
+    </div>
   )
 }
 
