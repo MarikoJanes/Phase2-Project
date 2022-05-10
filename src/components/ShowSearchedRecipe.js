@@ -4,17 +4,17 @@ function ShowSearchedRecipe({searchedRecipe}) {
 
     const data = searchedRecipe.map(recipe => {
         return (
-            <div key={recipe.id}>
-                <img src={recipe.image} alt={recipe.name} />
+            <li key={recipe.id} className="card" >
+                <img src={recipe.image} alt={recipe.name} style={{height: "236.29px"}} />
                 <h3>{recipe.name}</h3>
-            </div>
+            </li>
         )
     });
 
   return (
-    <div>
+    <ul className='cards'>
         {data}
-    </div>
+    </ul>
   )
 }
 

@@ -24,13 +24,13 @@ function Header() {
             HOME
         </NavLink>
         <NavLink
-            exact to="/allrecipes"
+            exact to="/recipes"
             style={linkStyles}
         >
             View All Recipes
         </NavLink>
         <NavLink
-            exact to="/recipes"
+            exact to="/post"
             style={linkStyles}
         >
             Add a recipe

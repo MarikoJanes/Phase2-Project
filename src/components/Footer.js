@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+    <div style={{textAlign: "center"}}>
         <p>© 2022</p>
     </div>
   )

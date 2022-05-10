@@ -3,16 +3,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function Slideshow({recipeData}) {
-    let data =recipeData;
     
-    if(recipeData==undefined || recipeData==null || recipeData.length == 0){
-    let tmp = [{"image" : "https://c.tenor.com/FBeNVFjn-EkAAAAC/ben-redblock-loading.gif",
-    "name":"Place holder"}];
-    recipeData = tmp;
-    }
     const eggImages = recipeData.map(recipe => {
-        return <div key={recipe.id}><img style={{width: "200px", height: "200px", paddingLeft: "70px"}} src={recipe.image} alt={recipe.name}/></div>
+        return <div key={recipe.id} ><img onClick={handleClick} id={recipe.id} style={{width: "200px", height: "200px",}} src={recipe.image} alt={recipe.name}/></div>
     })
+
+    function handleClick(e) {
+      console.log(e.target.id);
+    }
 
     const responsive = {
         desktop: {

@@ -3,7 +3,6 @@ import Header from './Header';
 import Search from './Search';
 import Slideshow from './Slideshow';
 import Footer from './Footer';
-import RecipeList from './RecipeList';
 import ShowSearchedRecipe from './ShowSearchedRecipe';
 import SingleRecipe from './SingleRecipe';
 
@@ -12,7 +11,7 @@ function MainContainer() {
   const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/recipes")
+    fetch("http://localhost:4000/recipes")
     .then(res => res.json())
     .then(data => {
       setRecipeData(data)
@@ -25,10 +24,9 @@ function MainContainer() {
 
 console.log(recipeData)
   return (
-    <div>
+    <div style={{textAlign: "center"}}>
       <h1>Break an Egg!</h1>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-      <RecipeList recipeData={recipeData} />
       <SingleRecipe recipeData={recipeData}/>
       {searchInput === "" ? null : <ShowSearchedRecipe searchedRecipe={searchedRecipe} />}
       <Slideshow recipeData={recipeData}/>

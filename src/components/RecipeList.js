@@ -1,27 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-function RecipeList({recipeData}) {
+function RecipeList() {
+    const [recipeData, setRecipeData] = useState([]);
 
+    useEffect(() => {
+        fetch("http://localhost:4000/recipes")
+    .then(res => res.json())
+    .then(data => {
+      setRecipeData(data)
+    });
+    }, []);
 
-    let data =recipeData;
-    
-if(recipeData==undefined || recipeData==null || recipeData.length == 0){
-let tmp = [{"image" : "https://c.tenor.com/FBeNVFjn-EkAAAAC/ben-redblock-loading.gif",
-"name":"Place holder"}];
-recipeData = tmp;
-}
     const lists = recipeData.map(egg => {
         return (
-          <li key={egg.id}>
+          <li key={egg.id} className="card">
           {egg.name}
-          {/* <img style={{width: "300px"}} src={egg.image} alt={egg.name} /> */}
+          <img style={{height: "236.29px"}} src={egg.image} alt={egg.name} />
           </li>
         )
         
       })
 
   return (
-    <div><h1>hello</h1>{lists}</div>
+    <div className='cards'>{lists}</div>
   )
 }
 
