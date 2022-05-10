@@ -1,27 +1,43 @@
 import React, { useState, useEffect } from 'react'
+import Header from './Header';
+import Search from './Search';
+import Slideshow from './Slideshow';
+import Footer from './Footer';
+import RecipeList from './RecipeList';
+import ShowSearchedRecipe from './ShowSearchedRecipe';
+import SingleRecipe from './SingleRecipe';
 
 function MainContainer() {
   const [recipeData, setRecipeData] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:3000/recipes")
     .then(res => res.json())
-    .then(data => setRecipeData(data));
+    .then(data => {
+      setRecipeData(data)
+    });
   }, []);
 
-  const lists = recipeData.map(egg => {
-    return (
-      <li key={egg.id}>
-      {egg.name}
-      <img style={{width: "300px"}} src={egg.image} alt={egg.name} />
-      </li>
-    )
-    
-  })
+  
 
+  const searchedRecipe = recipeData.filter(recipe => recipe.name.toLowerCase().includes(searchInput.toLocaleLowerCase()));
+
+console.log(recipeData)
   return (
-    <div>{lists}</div>
+    <div>
+      <h1>Break an Egg!</h1>
+      <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+      <RecipeList recipeData={recipeData} />
+      <SingleRecipe recipeData={recipeData}/>
+      {searchInput === "" ? null : <ShowSearchedRecipe searchedRecipe={searchedRecipe} />}
+      <Slideshow recipeData={recipeData}/>
+      <Footer />
+    </div>
   )
+
 }
+
+
 
 export default MainContainer

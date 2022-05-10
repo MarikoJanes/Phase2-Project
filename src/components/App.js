@@ -1,11 +1,21 @@
 import React from 'react'
 import MainContainer from './MainContainer'
+import { Route, Switch } from "react-router-dom";
+import RecipeList from './RecipeList';
+import Header from './Header';
 
 function App() {
   return (
     <div>
-      <h1>Break an Egg!</h1>
-      <MainContainer />
+      <Header />
+          <Switch>
+            <Route exact path="/">
+              <MainContainer />
+            </Route>
+            <Route exact path="/allrecipes">
+              <RecipeList />
+            </Route>
+          </Switch>
     </div>
   )
 }
