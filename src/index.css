@@ -150,11 +150,11 @@ label {
 }
 
 .formButton {
-  background-color: #FFD365;
+  background-color: #FFB72B;
   font-size: 1.5rem;
   margin: 1rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid #FFD365;
+  padding: 0.5rem 1.0rem;
+  border: 2px solid #FFB72B;
   border-radius: 10px
 }
 
@@ -162,9 +162,18 @@ label {
   position: absolute;
   border-radius: 80px;
   left: 70%;
+  font-weight: bold;
+  color: #fff;
 }
 
 .submitButton {
-
+  color: #000;
   margin-top: 100px;
 }
+
+.message {
+  color: gray;
+  margin-top: 0;
+}
+
+/*  <PostRecipeForm /> */

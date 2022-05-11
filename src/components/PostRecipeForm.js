@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
         padding: "10px",
         border: "3px solid #f8c146",
         boxShadow: "0px 0px 0px",
-        borderColor: "#f8c146",
+        borderColor: "#FFB72B",
         outline: "10px",
         borderRadius: "15px",
         width: "35%",
@@ -88,14 +88,13 @@ function PostRecipeForm( {refreshData}) {
         <label className='otherLabels'>Recipe Name: </label>
         <input  style={inputStyles} onChange={handleChange} type="text" name="name" value={formData.name} />
         <br></br>
-        <label className='otherLabels'>image URL: </label>
+        <label className='otherLabels'>Image URL: </label>
         <input style={inputStyles} onChange={handleChange} type="text" name="image" value={formData.image} />
         <br></br>
-    {/* alert how to type ingredients? like separate by "," */}
-        
-        <p>separate each indredient by ", " ex) 2eggs, salt</p>
         <label className='otherLabels'>Ingredients: </label>
         <input style={inputStyles} onChange={handleChange} type="text" name="ingredients" value={formData.ingredients} />
+        <p className='message'>separate each indredient by ", " ex) 2eggs, salt</p>
+        
         <br></br>
         <label>Instructions: </label>
         
