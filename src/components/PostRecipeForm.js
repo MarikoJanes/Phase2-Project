@@ -93,7 +93,7 @@ function PostRecipeForm( {refreshData}) {
         <br></br>
         <label className='otherLabels'>Ingredients: </label>
         <input style={inputStyles} onChange={handleChange} type="text" name="ingredients" value={formData.ingredients} />
-        <p className='message'>separate each indredient by ", " ex) 2eggs, salt</p>
+        <p className='message'>separate each ingredient by ", " ex) 2eggs, salt</p>
         
         <br></br>
         <label>Instructions: </label>

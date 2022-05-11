@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
 h1 {
   font-size: 60px;
 }
@@ -196,8 +201,12 @@ label {
 /* <ShowSearchedRecipe /> */
 
 .searchCard {
-  text-align: justify;
+  text-align: center;
   margin: 1rem;
   box-shadow:7px 6px 10px 1px #FFB72B;
 }
 /* <ShowSearchedRecipe /> */
+
+.lists {
+  margin-top: 60px;
+}

@@ -20,7 +20,7 @@ function RecipeList({recipeData}) {
 
   return (
     <div className="grow">
-      <div className='cards'>
+      <div className='cards lists'>
         {lists}
       </div>
     </div>
