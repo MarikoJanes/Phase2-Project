@@ -201,7 +201,7 @@ label {
 /* <ShowSearchedRecipe /> */
 
 .searchCard {
-  text-align: center;
+  justify-content:space-between;
   margin: 1rem;
   box-shadow:7px 6px 10px 1px #FFB72B;
   width: 315px;
@@ -210,4 +210,12 @@ label {
 
 .lists {
   margin-top: 60px;
+}
+
+.searchCards {
+  padding-left: 0;
+}
+
+.eggName {
+  text-align: center;
 }

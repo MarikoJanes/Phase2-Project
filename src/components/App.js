@@ -38,7 +38,7 @@ console.log(recipeData)
               <PostRecipeForm refreshData={getLatestRecipeData}/>
             </Route>
             <Route path="/recipes/:id">
-              <SingleRecipe recipeData={recipeData} />
+              <SingleRecipe />
             </Route>
           </Switch>
     </div>

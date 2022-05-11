@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 
-function SingleRecipe({recipeData}) {
+function SingleRecipe() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [singleRecipe, setSingleRecipe] = useState([]);
   const { id } = useParams();
@@ -35,7 +35,7 @@ return (
     <h3 className = "recipeName"> {singleRecipe.name}</h3>
     <h3>Ingredients:</h3>
     <ul> {singleRecipe.ingredients.map((ingredient,idx) =>
-      <li key= {idx}>{ingredient}</li>
+      <li key={idx}>{ingredient}</li>
       )}
     </ul>
     <h3>Instructions:</h3> 

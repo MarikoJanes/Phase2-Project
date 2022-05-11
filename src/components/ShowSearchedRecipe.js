@@ -19,7 +19,7 @@ function ShowSearchedRecipe({searchedRecipe}) {
     }
 
   return (
-    <ul className='cards'>
+    <ul className='cards searchCards'>
         {data}
     </ul>
   )

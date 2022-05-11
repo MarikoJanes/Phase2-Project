@@ -11,8 +11,8 @@ function RecipeList({recipeData}) {
           <li key={egg.id} className="card">
           <Link to={`/recipes/${egg.id}`}>
             <img style={{height: "236.29px"}} src={egg.image} alt={egg.name} />
-            <h4>{egg.name}</h4>
           </Link> 
+          <h4 className='eggName'>{egg.name}</h4>
           </li>
         )
         
