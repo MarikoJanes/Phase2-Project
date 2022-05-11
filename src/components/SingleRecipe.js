@@ -1,26 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 
 function SingleRecipe({recipeData}) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [singleRecipe, setSingleRecipe] = useState([]);
   const { id } = useParams();
   console.log(id);
-  const selectedRecipe = recipeData.filter(recipe => recipe.id === JSON.parse(id))
-   
-  console.log(selectedRecipe)
 
+  useEffect(() => {
+    fetch(`http://localhost:4000/recipes/${id}`)
+    .then(res => res.json())
+    .then(data => {
+      setSingleRecipe(data);
+      setIsLoaded(true);
+    })
+  }, [id]);
+
+
+  // const selectedRecipe = recipeData.filter(recipe => recipe.id === JSON.parse(id))
+   
+  // console.log(selectedRecipe)
+
+  if (!isLoaded) return <h2>Loading...</h2>;
   
 return (
-  <div key={selectedRecipe[0].id} className="row">
+  <div key={singleRecipe.id} className="row">
     <div className="column" >
     <div className="paddingClass">
-    <img src={selectedRecipe[0].image} alt={selectedRecipe[0].name} height="400"  width= "400"/>
+    <img src={singleRecipe.image} alt={singleRecipe.name} height="400"  width= "400"/>
       </div>
       </div>
     <div className="column">
     
-    <h3 className = "recipeName"> {selectedRecipe[0].name}</h3>
+    <h3 className = "recipeName"> {singleRecipe.name}</h3>
     <h3>Ingredients:</h3>
-    <ul> {selectedRecipe[0].ingredients.map((ingredient,idx) =>
+    <ul> {singleRecipe.ingredients.map((ingredient,idx) =>
       <li key= {idx}>{ingredient}</li>
       )}
     </ul>
@@ -30,7 +44,7 @@ return (
             <h4 key={key}>{key}:{val}</h4>  
         )
       } */}
-      {selectedRecipe[0].instructions.map((recipe, i) => {
+      {singleRecipe.instructions.map((recipe, i) => {
         return (
           <div>
           <h4 key={i}>{Object.keys(recipe)}: {Object.values(recipe)}</h4>
