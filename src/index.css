@@ -96,6 +96,12 @@ h1 {
   padding-left: 150px;
   
 }
+.column {
+  float: left;
+  width: 30%;
+  padding-left: 150px;
+  
+}
 
 /* Clear floats after the columns */
 .row:after {
