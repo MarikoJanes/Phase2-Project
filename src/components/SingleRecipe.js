@@ -15,7 +15,6 @@ return (
     <div className="paddingClass">
     <img src={selectedRecipe[0].image} alt={selectedRecipe[0].name} height="400"  width= "400"/>
       </div>
-    
       </div>
     <div className="column">
     

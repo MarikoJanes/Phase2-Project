@@ -6,25 +6,27 @@ import { NavLink } from 'react-router-dom';
 
 const linkStyles = {
     display: "inline-block",
-    width: "50px",
+    // width: "50px",
     padding: "12px",
-    paddingLeft: "100px",
-    paddingRight: "100px",
+    paddingLeft: "50px",
+    paddingRight: "50px",
     margin: "0 6px 6px",
     background: "#FFB72B",
     textDecoration: "none",
-    color: "#F7F7F7",
+    color: "#000000",
     fontFamily: "Soleil, Helvetica, Arial, sans-serif",
     fontWeight: "100",
-    lettersSpacing: "2px",
+    letterSpacing: "6px",
     textTransform: "uppercase",
-    // color: rgb(0, 0, 0);
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    
     
   };
 
 function Header() {
   return (
-    <div> 
+    <div className = "paddingHeader"> 
         <NavLink
             exact to="/"
             style={linkStyles}

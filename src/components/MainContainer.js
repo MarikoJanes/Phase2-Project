@@ -16,10 +16,9 @@ console.log(recipeData)
     <div style={{textAlign: "center"}}>
       <div style={{ 
       backgroundImage: `url("https://cdn.dribbble.com/users/774095/screenshots/6615293/egg_short_dribbble_v01.gif")`,
-      // height: "150px",
-      // width:"20%",
       textAlign: "center",
-      backgroundSize: "contain",
+      // backgroundSize: "contain",
+      backgroundRepeat: "round",
       }}>
       <h1 className = "tagName" >Break an Egg! </h1>
       </div>

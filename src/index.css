@@ -68,7 +68,7 @@ h1 {
     height: 60px;
     line-height: 60px;
     font-size: 40px;
-    color: #000;
+    color: rgba(0, 0, 0, 0.988);
     letter-spacing: 2px;
     font-family: Soleil, Helvetica, Arial, sans-serif;
     padding: 0 20px;
@@ -104,7 +104,8 @@ h1 {
 }
 
 .paddingClass{
-  padding-top: 70px
+  padding-top: 70px;
+  border-radius: 150;
 }
 
 .grow img{
@@ -118,3 +119,13 @@ h1 {
   transform: scale(1.2);
   transition: 1s ease;
   }
+
+.paddingHeader{
+  padding-top: 50px;
+}
+  
+/* **************************** */
+.searchButton{
+  padding: 50px;
+}
+
