@@ -11,12 +11,20 @@
         "bread",
         "mayonnaise"
       ],
-      "description": {
-        "Step-1": " Boil 2 eggs on medium heat for 8 mins",
-        "Step-2": " Break the boiled eggs in small pieces",
-        "Step-3": " Add 1/4 teaspoon of salt, sprinkle some peppers and add 3 tablespoon of mayonnaise and mix all together",
-        "Step-4": " Spread on your favorite toast and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " Boil 2 eggs on medium heat for 8 mins"
+        },
+        {
+          "Step2": " Break the boiled eggs in small pieces"
+        },
+        {
+          "Step3": " Add 1/4 teaspoon of salt, sprinkle some peppers and add 3 tablespoon of mayonnaise and mix all together"
+        },
+        {
+          "Step4": " Spread on your favorite toast and Enjoy!"
+        }
+      ]
     },
     {
       "id": 2,
@@ -31,14 +39,26 @@
         "Freshly ground black pepper",
         "Smoked Spanish paprika, for garnish"
       ],
-      "description": {
-        "Step-1": " Boil 6 eggs on high heat for 10 minutes",
-        "Step-2": " Rinse under cold water continuously for 1 minute and carefully peel egg shells",
-        "Step-3": " Slice the eggs in half lengthwise and remove yolks to a medium bowl",
-        "Step-4": " Mash the yolks into a fine crumble using a fork. Add mayonnaise, vinegar, mustard, salt, and pepper, and mix well",
-        "Step-5": " Place the whites on a serving platter and evenly disperse heaping teaspoons of the yolk mixture into the egg whites",
-        "Step-6": " Sprinkle with paprika and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " Boil 6 eggs on high heat for 10 minutes"
+        },
+        {
+          "Step2": " Rinse under cold water continuously for 1 minute and carefully peel egg shells"
+        },
+        {
+          "Step3": " Slice the eggs in half lengthwise and remove yolks to a medium bowl"
+        },
+        {
+          "Step4": " Mash the yolks into a fine crumble using a fork. Add mayonnaise, vinegar, mustard, salt, and pepper, and mix well"
+        },
+        {
+          "Step5": " Place the whites on a serving platter and evenly disperse heaping teaspoons of the yolk mixture into the egg whites"
+        },
+        {
+          "Step6": " Sprinkle with paprika and Enjoy!"
+        }
+      ]
     },
     {
       "id": 3,
@@ -54,12 +74,20 @@
         "⅛ teaspoon salt, ",
         "1 teaspoon chopped fresh chives"
       ],
-      "description": {
-        "Step-1": " Combine chicken broth, soy sauce, and sesame oil in a small saucepan. Bring to a boil on high heat",
-        "Step-2": " Stir together cornstarch and water to dissolve cornstarch; pour into the boiling broth",
-        "Step-3": " Lower to medium heat and pour in beaten egg while stirring gently",
-        "Step-4": " Once the egg is cooked, season with salt and pepper. Sprinkle with chives and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " Combine chicken broth, soy sauce, and sesame oil in a small saucepan. Bring to a boil on high heat"
+        },
+        {
+          "Step2": " Stir together cornstarch and water to dissolve cornstarch; pour into the boiling broth"
+        },
+        {
+          "Step3": " Lower to medium heat and pour in beaten egg while stirring gently"
+        },
+        {
+          "Step4": " Once the egg is cooked, season with salt and pepper. Sprinkle with chives and Enjoy!"
+        }
+      ]
     },
     {
       "id": 4,
@@ -77,12 +105,20 @@
         "1 tablespoon butter ",
         "Additional minced fresh herbs"
       ],
-      "description": {
-        "Step-1": " Whisk together the first eight ingredients.",
-        "Step-2": " In a large skillet pan, heat butter over medium heat.",
-        "Step-3": " Pour in egg mixture; cook and stir until eggs are thickened and no liquid egg remains. ",
-        "Step-4": " Sprinkle with additional minced herbs and Enjoy! "
-      }
+      "instructions": [
+        {
+          "Step1": " Whisk together the first eight ingredients."
+        },
+        {
+          "Step2": " In a large skillet pan, heat butter over medium heat."
+        },
+        {
+          "Step3": " Pour in egg mixture; cook and stir until eggs are thickened and no liquid egg remains. "
+        },
+        {
+          "Step4": " Sprinkle with additional minced herbs and Enjoy! "
+        }
+      ]
     },
     {
       "id": 5,
@@ -100,13 +136,23 @@
         "4 cups shredded Monterey Jack cheese",
         "2 cups 4% cottage cheese"
       ],
-      "description": {
-        "Step-1": " In a large bowl, combine the flour, baking powder and salt",
-        "Step-2": " In a skillet, saute the mushrooms and onions in 1 tablespoon butter until tender.",
-        "Step-3": " In another bowl, combine eggs and cheeses. Melt remaining 1/2 cup butter; add to egg mixture. Stir into dry ingredients along with mushroom mixture.",
-        "Step-4": " Fill greased muffin cups three-fourths full. Bake at 350° for 35-40 minutes or until a knife inserted in the center comes out clean.",
-        "Step-5": " Carefully run the knife around the edge of muffin cups, serve and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " In a large bowl, combine the flour, baking powder and salt"
+        },
+        {
+          "Step2": " In a skillet, saute the mushrooms and onions in 1 tablespoon butter until tender."
+        },
+        {
+          "Step3": " In another bowl, combine eggs and cheeses. Melt remaining 1/2 cup butter; add to egg mixture. Stir into dry ingredients along with mushroom mixture."
+        },
+        {
+          "Step4": " Fill greased muffin cups three-fourths full. Bake at 350° for 35-40 minutes or until a knife inserted in the center comes out clean."
+        },
+        {
+          "Step5": " Carefully run the knife around the edge of muffin cups, serve and Enjoy!"
+        }
+      ]
     },
     {
       "id": 6,
@@ -123,13 +169,23 @@
         "1 tablespoon chopped green pepper",
         "1/4 cup shredded reduced-fat cheddar cheese"
       ],
-      "description": {
-        "Step-1": " Whisk together the first 5 ingredients.",
-        "Step-2": " On a medium heat , Pour in egg mixture in your pan.",
-        "Step-3": " As eggs set, push cooked portions toward the center, letting uncooked eggs flow underneath",
-        "Step-4": " When eggs are thickened and no liquid egg remains, top 1 half with remaining ingredients. ",
-        "Step-5": " Fold omelet in half and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " Whisk together the first 5 ingredients."
+        },
+        {
+          "Step2": " On a medium heat , Pour in egg mixture in your pan."
+        },
+        {
+          "Step3": " As eggs set, push cooked portions toward the center, letting uncooked eggs flow underneath"
+        },
+        {
+          "Step4": " When eggs are thickened and no liquid egg remains, top 1 half with remaining ingredients. "
+        },
+        {
+          "Step5": " Fold omelet in half and Enjoy!"
+        }
+      ]
     },
     {
       "id": 7,
@@ -147,13 +203,23 @@
         "1 cup shredded cheddar cheese",
         " 1/2 cup crushed potato chips"
       ],
-      "description": {
-        "Step-1": " In a bowl, combine eggs, celery, mayonnaise, nuts, green pepper, onion, salt and pepper; mix well.",
-        "Step-2": " Pour into a greased 11x7-in. baking dish.",
-        "Step-3": " Sprinkle with cheese and potato chips.",
-        "Step-4": " Bake, uncovered, at 375° for 25 minutes or until heated through.",
-        "Step-5": " Serve and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " In a bowl, combine eggs, celery, mayonnaise, nuts, green pepper, onion, salt and pepper; mix well."
+        },
+        {
+          "Step2": " Pour into a greased 11x7-in. baking dish."
+        },
+        {
+          "Step3": " Sprinkle with cheese and potato chips."
+        },
+        {
+          "Step4": " Bake, uncovered, at 375° for 25 minutes or until heated through."
+        },
+        {
+          "Step5": " Serve and Enjoy!"
+        }
+      ]
     },
     {
       "id": 8,
@@ -167,12 +233,20 @@
         "1 tablespoon canola oil",
         "2 tablespoons process cheese sauce"
       ],
-      "description": {
-        "Step-1": " In a bowl, whisk eggs, milk, salt and pepper.",
-        "Step-2": " On a medium heat, with oil; pour in egg mixture.",
-        "Step-3": " Add and stir in cheese sauce.",
-        "Step-4": " Cook eggs until thickened and Enjoy!"
-      }
+      "instructions": [
+        {
+          "Step1": " In a bowl, whisk eggs, milk, salt and pepper."
+        },
+        {
+          "Step2": " On a medium heat, with oil; pour in egg mixture."
+        },
+        {
+          "Step3": " Add and stir in cheese sauce."
+        },
+        {
+          "Step4": " Cook eggs until thickened and Enjoy!"
+        }
+      ]
     },
     {
       "id": 9,
@@ -185,12 +259,20 @@
         "1/8 teaspoon pepper",
         "Toast, for serving, (optional)"
       ],
-      "description": {
-        "Step-1": " Crack an egg into and slowly add it to the medium heat skillet. ",
-        "Step-2": " Cover with a tight lid and cook, uninterrupted, until the whites are completely set but the yolks are still runny, 2 to 2 1/2 minutes.",
-        "Step-3": " Season with salt and pepper.",
-        "Step-4": " Slide the eggs out of the skillet onto your favorite toast and Enjoy! "
-      }
+      "instructions": [
+        {
+          "Step1": " Crack an egg into and slowly add it to the medium heat skillet."
+        },
+        {
+          "Step2": " Cover with a tight lid and cook, uninterrupted, until the whites are completely set but the yolks are still runny, 2 to 2 1/2 minutes."
+        },
+        {
+          "Step3": " Season with salt and pepper."
+        },
+        {
+          "Step4": " Slide the eggs out of the skillet onto your favorite toast and Enjoy!"
+        }
+      ]
     },
     {
       "id": 10,
@@ -209,16 +291,29 @@
         "2 tablespoons minced chives or chopped green onions",
         "1/4 cup shredded Parmesan cheese"
       ],
-      "description": {
-        "Step-1": " Preheat the oven to 350° and Beat ricotta and cream cheese until smooth.",
-        "Step-2": " Add eggs, butter, salt and pepper; beat until blended. ",
-        "Step-3": " In another bowl, whisk flour with baking powder and add to egg mixture.",
-        "Step-4": " Stir in Gruyere and chives.",
-        "Step-5": " Pour in all mixture in baking pan and sprinkle with Parmesan on top.",
-        "Step-6": " Bake, uncovered for 25-30 minutes.",
-        "Step-7": " Let stand 10 minutes before cutting and Enjoy! "
-      }
+      "instructions": [
+        {
+          "Step1": " Preheat the oven to 350° and Beat ricotta and cream cheese until smooth."
+        },
+        {
+          "Step2": " Add eggs, butter, salt and pepper; beat until blended. "
+        },
+        {
+          "Step3": " In another bowl, whisk flour with baking powder and add to egg mixture."
+        },
+        {
+          "Step4": " Stir in Gruyere and chives."
+        },
+        {
+          "Step5": " Pour in all mixture in baking pan and sprinkle with Parmesan on top."
+        },
+        {
+          "Step6": " Bake, uncovered for 25-30 minutes."
+        },
+        {
+          "Step7": " Let stand 10 minutes before cutting and Enjoy!"
+        }
+      ]
     }
-    
   ]
 }
