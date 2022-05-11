@@ -11,7 +11,7 @@ const linkStyles = {
     paddingLeft: "50px",
     paddingRight: "50px",
     margin: "0 6px 6px",
-    background: "#FFB72B",
+    // background: "#FFB72B",
     textDecoration: "none",
     color: "#000000",
     fontFamily: "Soleil, Helvetica, Arial, sans-serif",
@@ -30,18 +30,21 @@ function Header() {
         <NavLink
             exact to="/"
             style={linkStyles}
+            activeStyle={{ background: "#FFB72B" }}
         >
             HOME
         </NavLink>
         <NavLink
             exact to="/recipes"
             style={linkStyles}
+            activeStyle={{ background: "#FFB72B" }}
         >
             View All Recipes
         </NavLink>
         <NavLink
             exact to="/post"
             style={linkStyles}
+            activeStyle={{ background: "#FFB72B" }}
         >
             Add a recipe
         </NavLink>
