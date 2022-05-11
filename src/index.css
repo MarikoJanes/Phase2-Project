@@ -16,7 +16,10 @@ h1 {
   font-size: 60px;
 }
 
-
+.loading-image {
+  display:block;
+  margin: 0 auto;
+  }
 
 /* styling <RecipeList /> */
 .cards {
@@ -56,4 +59,50 @@ h1 {
   .card {
     width: calc(20% - 2rem);
   }
+}
+
+    .tagName {width: auto;
+    display: inline-block;
+    background: #fff;
+    margin: 80px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    color: #000;
+    letter-spacing: 2px;
+    font-family: Soleil, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    height: 75px;
+    line-height: 75px;
+    margin: 0;
+    margin-top: 110px;
+    position: relative;
+    opacity: 0.8;
+    top: -60px;
+    font-style: Monaco;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding-left: 150px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.recipeName{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center
+}
+
+.paddingClass{
+  padding-top: 70px
 }
