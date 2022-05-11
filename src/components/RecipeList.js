@@ -18,11 +18,13 @@ function RecipeList({recipeData}) {
       })
 
   return (
-    <div className='cards'>
+    <div className="grow">
+      <div className='cards'>
         {lists}
         {/* <Route path={`${match.url}/recipes/${id}`}>
             <SingleRecipe />
       </Route> */}
+      </div>
     </div>
   )
 }
