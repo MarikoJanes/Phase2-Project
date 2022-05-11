@@ -204,6 +204,7 @@ label {
   text-align: center;
   margin: 1rem;
   box-shadow:7px 6px 10px 1px #FFB72B;
+  width: 315px;
 }
 /* <ShowSearchedRecipe /> */
 
