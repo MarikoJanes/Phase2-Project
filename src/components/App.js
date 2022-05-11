@@ -15,8 +15,13 @@ function App() {
     .then(res => res.json())
     .then(data => {
       setRecipeData(data)
-    });
-  }, []);
+  })}, [setRecipeData]);
+
+  function getLatestRecipeData(data){
+    setRecipeData(recipeData => [...recipeData, data]);
+  };
+  
+console.log(recipeData)
 
   return (
     <div>
@@ -29,7 +34,7 @@ function App() {
               <RecipeList recipeData={recipeData} />
             </Route>
             <Route exact path="/post">
-              <PostRecipeForm />
+              <PostRecipeForm refreshData={getLatestRecipeData}/>
             </Route>
             <Route path="/recipes/:id">
               <SingleRecipe recipeData={recipeData} />
