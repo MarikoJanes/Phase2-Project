@@ -6,7 +6,7 @@ function ShowSearchedRecipe({searchedRecipe}) {
 
     const data = searchedRecipe.map(recipe => {
         return (
-            <li  key={recipe.id} className="card">
+            <li  key={recipe.id} className="searchCard">
                 <img onClick={handleClick} id={recipe.id} src={recipe.image} alt={recipe.name} style={{height: "236.29px"}} />
                 <h3>{recipe.name}</h3>
             </li>

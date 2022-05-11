@@ -28,6 +28,8 @@ h1 {
 
 .card {
   margin: 1rem;
+  box-shadow:7px 6px 10px 1px #FFB72B;
+  border-radius: 15px;
 }
 
 .card img {
@@ -177,3 +179,25 @@ label {
 }
 
 /*  <PostRecipeForm /> */
+/*  <Footer /> */
+
+.footer {
+  color: gray;
+}
+/*  <Footer /> */
+
+/*  <Slideshow /> */
+
+.slideshow {
+  margin-top: 150px;
+}
+/*  <Slideshow /> */
+
+/* <ShowSearchedRecipe /> */
+
+.searchCard {
+  text-align: justify;
+  margin: 1rem;
+  box-shadow:7px 6px 10px 1px #FFB72B;
+}
+/* <ShowSearchedRecipe /> */

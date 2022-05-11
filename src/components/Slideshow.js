@@ -37,7 +37,7 @@ function Slideshow({recipeData}) {
 
 
   return (
-    <div>
+    <div className='slideshow'>
       <Carousel
         swipeable={false}
         draggable={false}

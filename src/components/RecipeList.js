@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+// import { Card } from 'react-bootstrap';
 
 
 function RecipeList({recipeData}) {
@@ -9,8 +10,8 @@ function RecipeList({recipeData}) {
         return (
           <li key={egg.id} className="card">
           <Link to={`/recipes/${egg.id}`}>
-            {egg.name}
             <img style={{height: "236.29px"}} src={egg.image} alt={egg.name} />
+            <h4>{egg.name}</h4>
           </Link> 
           </li>
         )
@@ -21,11 +22,9 @@ function RecipeList({recipeData}) {
     <div className="grow">
       <div className='cards'>
         {lists}
-        {/* <Route path={`${match.url}/recipes/${id}`}>
-            <SingleRecipe />
-      </Route> */}
       </div>
     </div>
+   
   )
 }
 

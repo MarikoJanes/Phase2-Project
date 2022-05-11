@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer style={{textAlign: "center", position: "fixed",
     bottom: "0", width: "100%"}}>
-        <p>© 2022</p>
+        <p className='footer'>© 2022 Break an Egg!</p>
     </footer>
   )
 }
