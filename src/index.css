@@ -129,3 +129,42 @@ h1 {
   padding: 50px;
 }
 
+/* <PostRecipeForm /> */
+form {
+  margin: 50px 0;
+  text-align: center;
+}
+
+label {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 20%;
+}
+
+.stepLabel {
+  padding-top: 40px
+}
+
+.otherLabels {
+  padding-top: 25px;
+}
+
+.formButton {
+  background-color: #FFD365;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #FFD365;
+  border-radius: 10px
+}
+
+.addButton {
+  position: absolute;
+  border-radius: 80px;
+  left: 70%;
+}
+
+.submitButton {
+
+  margin-top: 100px;
+}

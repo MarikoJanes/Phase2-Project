@@ -1,6 +1,20 @@
 import React, {useState} from 'react'
 import { useHistory } from "react-router-dom";
 
+
+    const inputStyles = {
+        padding: "10px",
+        border: "3px solid #f8c146",
+        boxShadow: "0px 0px 0px",
+        borderColor: "#f8c146",
+        outline: "10px",
+        borderRadius: "15px",
+        width: "35%",
+        margin: "20px 0",
+    };
+
+ 
+
 function PostRecipeForm( {refreshData}) {
 
     const history = useHistory();
@@ -27,9 +41,10 @@ function PostRecipeForm( {refreshData}) {
        const stepList =  [...stepInput];
             stepList[index][name] = value;
             console.log(stepList)
-        setStepInput(stepList,setFormData(fd => {return {...fd, ["instructions"]: stepInput}}));
+        setStepInput(stepList);
     }
 
+    /* ,setFormData(fd => {return {...fd, ["instructions"]: stepInput}}) */
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -70,25 +85,30 @@ function PostRecipeForm( {refreshData}) {
 
   return (
    <form onSubmit={handleSubmit}>
-        <label>Recipe Name: </label>
-        <input  onChange={handleChange} type="text" name="name" value={formData.name} />
+        <label className='otherLabels'>Recipe Name: </label>
+        <input  style={inputStyles} onChange={handleChange} type="text" name="name" value={formData.name} />
         <br></br>
-        <label>image URL: </label>
-        <input onChange={handleChange} type="text" name="image" value={formData.image} />
+        <label className='otherLabels'>image URL: </label>
+        <input style={inputStyles} onChange={handleChange} type="text" name="image" value={formData.image} />
         <br></br>
     {/* alert how to type ingredients? like separate by "," */}
         
         <p>separate each indredient by ", " ex) 2eggs, salt</p>
-        <label>Ingredients: </label>
-        <input onChange={handleChange} type="text" name="ingredients" value={formData.ingredients} />
+        <label className='otherLabels'>Ingredients: </label>
+        <input style={inputStyles} onChange={handleChange} type="text" name="ingredients" value={formData.ingredients} />
         <br></br>
         <label>Instructions: </label>
-        <br></br>
+        
+        <div>
+            {stepInput.map((Step, i) => {
+                                return <div key={i+1}><label className='stepLabel'>Step {i+1}: </label><textarea style={inputStyles} onChange={(e)=> handleStep(e,i)} type="text" name={"Step"+(i+1)} value={Step[stepNum+1+""]}  /> </div>})}
+            <button className="formButton addButton" onClick={handleClick} type="button"> + </button>
+        </div>
+       
+        
+        <input className="formButton submitButton"  type="submit" value="add a recipe" />
     
-        {stepInput.map((Step, i) => {
-                            return <div key={i+1}><label >Step {i+1}</label><textarea onChange={(e)=> handleStep(e,i)} type="text" name={"Step"+(i+1)} value={Step[stepNum+1+""]}  /> </div>})}
-        <button onClick={handleClick} type="button"> + add a step </button>
-        <input type="submit" value="add a recipe" />
+        
    </form>
   )
 }

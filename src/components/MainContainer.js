@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Search from './Search';
 import Slideshow from './Slideshow';
 import Footer from './Footer';
 import ShowSearchedRecipe from './ShowSearchedRecipe';
-import SingleRecipe from './SingleRecipe';
-import { Route, useRouteMatch, useParams } from "react-router-dom";
+
 
 function MainContainer({recipeData}) {
   const [searchInput, setSearchInput] = useState("");

@@ -8,7 +8,7 @@ function SingleRecipe({recipeData}) {
    
   console.log(selectedRecipe)
 
-    
+  
 return (
   <div key={selectedRecipe[0].id} className="row">
     <div className="column" >
