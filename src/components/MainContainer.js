@@ -14,7 +14,15 @@ function MainContainer({recipeData}) {
 console.log(recipeData)
   return (
     <div style={{textAlign: "center"}}>
-      <h1>Break an Egg!</h1>
+      <div style={{ 
+      backgroundImage: `url("https://cdn.dribbble.com/users/774095/screenshots/6615293/egg_short_dribbble_v01.gif")`,
+      // height: "150px",
+      // width:"20%",
+      textAlign: "center",
+      backgroundSize: "contain",
+      }}>
+      <h1 className = "tagName" >Break an Egg! </h1>
+      </div>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
       {searchInput === "" ? null : <ShowSearchedRecipe searchedRecipe={searchedRecipe} />}
       <Slideshow recipeData={recipeData}/>
