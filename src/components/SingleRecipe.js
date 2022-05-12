@@ -21,11 +21,15 @@ function SingleRecipe() {
    
   // console.log(selectedRecipe)
 
+  // const styles = {
+  //   borderTop: '5px solid rgba(0, 0, 0, 0.05)', 
+  // }
+
   if (!isLoaded) return <h2>Loading...</h2>;
   
 return (
   <div key={singleRecipe.id} className="row">
-    <div className="column" >
+    <div  className="column" >
     <div className="paddingClass">
     <img src={singleRecipe.image} alt={singleRecipe.name} height="400"  width= "400"/>
       </div>

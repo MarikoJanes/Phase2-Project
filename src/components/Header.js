@@ -24,9 +24,13 @@ const linkStyles = {
     
   };
 
+  const styles = {
+    borderBottom: '5px solid #f8c146', 
+  }
+
 function Header() {
   return (
-    <div className = "paddingHeader"> 
+    <div style={styles} className = "paddingHeader"> 
         <NavLink
             exact to="/"
             style={linkStyles}

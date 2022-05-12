@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Search from './Search';
 import Slideshow from './Slideshow';
-import Footer from './Footer';
 import ShowSearchedRecipe from './ShowSearchedRecipe';
 
 
@@ -24,7 +23,6 @@ console.log(recipeData)
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
       {searchInput === "" ? null : <ShowSearchedRecipe searchedRecipe={searchedRecipe} />}
       <Slideshow recipeData={recipeData}/>
-      <Footer />
     </div>
   )
 

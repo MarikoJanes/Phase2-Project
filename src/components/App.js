@@ -5,6 +5,7 @@ import RecipeList from './RecipeList';
 import Header from './Header';
 import PostRecipeForm from './PostRecipeForm';
 import SingleRecipe from './SingleRecipe';
+import Footer from './Footer';
 
 
 function App() {
@@ -41,6 +42,8 @@ console.log(recipeData)
               <SingleRecipe />
             </Route>
           </Switch>
+        <Footer/> 
+
     </div>
   )
 }

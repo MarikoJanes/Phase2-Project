@@ -20,7 +20,7 @@ function Search({searchInput, setSearchInput}) {
   return (
     <div className= "searchButton">
         
-        <input style={inputStyles} onChange={handleChange} type="text" placeholder="Search recipe ..." name="search" value={searchInput} />
+        <input style={inputStyles} onChange={handleChange} type="text" placeholder=" 🍳  Search a recipe ..." name="search" value={searchInput} />
     </div>
 
   )

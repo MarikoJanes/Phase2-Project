@@ -88,7 +88,7 @@ h1 {
     position: relative;
     opacity: 0.8;
     top: -60px;
-    font-style: Monaco;
+    letter-spacing: 6px;
 }
 .column {
   float: left;
