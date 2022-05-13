@@ -3,6 +3,7 @@ import Search from './Search';
 import Slideshow from './Slideshow';
 import ShowSearchedRecipe from './ShowSearchedRecipe';
 import Footer from './Footer';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
 
 function MainContainer({recipeData}) {
@@ -10,6 +11,8 @@ function MainContainer({recipeData}) {
 
   const searchedRecipe = recipeData.filter(recipe => recipe.name.toLowerCase().includes(searchInput.toLocaleLowerCase()));
 
+  useDocumentTitle("Break an Egg! | Home");
+  
 console.log(recipeData)
   return (
     <div style={{textAlign: "center"}}>

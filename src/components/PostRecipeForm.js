@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { useHistory } from "react-router-dom";
 import Footer from './Footer';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
 
     const inputStyles = {
@@ -45,7 +46,7 @@ function PostRecipeForm( {refreshData}) {
         setStepInput(stepList);
     }
 
-    /* ,setFormData(fd => {return {...fd, ["instructions"]: stepInput}}) */
+    useDocumentTitle("Break an Egg! | Recipe Post Form");
 
     function handleSubmit(e) {
         e.preventDefault();

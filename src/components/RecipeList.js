@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from './Footer';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
 
 function RecipeList({recipeData}) {
  
+  useDocumentTitle("Break an Egg! | All Recipes");
 
     const lists = recipeData.map(egg => {
         return (

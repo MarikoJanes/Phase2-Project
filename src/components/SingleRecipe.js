@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import useDocumentTitle from '../hooks/useDocumentTitle';
 import Footer from './Footer';
 
 function SingleRecipe() {
@@ -17,6 +18,8 @@ function SingleRecipe() {
     })
   }, [id]);
 
+  const pageTitle = singleRecipe ? `Break an Egg! | ${singleRecipe.name}` : "Break an Egg!";
+  useDocumentTitle(pageTitle);
 
   // const selectedRecipe = recipeData.filter(recipe => recipe.id === JSON.parse(id))
    
@@ -30,15 +33,15 @@ function SingleRecipe() {
   
 return (
   <>
-  <div key={singleRecipe.id} className="row">
-    <div  className="column" >
+  <div key={singleRecipe.id} className="row recipeBox">
+    <div  className="column left" >
     <div className="paddingClass">
     <img src={singleRecipe.image} alt={singleRecipe.name} height="400"  width= "400"/>
       </div>
       </div>
-    <div className="column">
+    <div className="column right">
     
-    <h3 className = "recipeName"> {singleRecipe.name}</h3>
+    <h3 className="recipeName"> {singleRecipe.name}</h3>
     <h3>Ingredients:</h3>
     <ul> {singleRecipe.ingredients.map((ingredient,idx) =>
       <li key={idx}>{ingredient}</li>
@@ -52,8 +55,9 @@ return (
       } */}
       {singleRecipe.instructions.map((recipe, i) => {
         return (
-          <div>
-          <h4 key={i}>{Object.keys(recipe)}: {Object.values(recipe)}</h4>
+          <div key={i}>
+          <h4>{Object.keys(recipe)}: </h4>
+          <h4 className='steps'>{Object.values(recipe)}</h4>
           </div>
           )
       })}

@@ -90,18 +90,13 @@ h1 {
     top: -60px;
     letter-spacing: 6px;
 }
+
 .column {
   float: left;
   width: 30%;
   padding-left: 150px;
-  
 }
-.column {
-  float: left;
-  width: 30%;
-  padding-left: 150px;
-  
-}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -113,13 +108,13 @@ h1 {
 .recipeName{
   font-weight: bold;
   font-size: 30px;
-  text-align: center
+  text-align: center;
 }
 
 .paddingClass{
   padding-top: 70px;
   border-radius: 150;
-}
+} 
 
 .grow img{
   transition: 1s ease;
@@ -224,4 +219,23 @@ label {
 
 .eggName {
   text-align: center;
+}
+
+.recipeBox {
+  padding-top: 70px;
+  width: 100%;
+}
+
+.left {
+  left: 0;
+  padding: 0 10%;
+}
+
+.right {
+  right: 0;
+  padding: 0 5%;
+}
+
+.steps {
+  padding-left: 10px;
 }
