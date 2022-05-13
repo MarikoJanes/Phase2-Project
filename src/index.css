@@ -131,6 +131,15 @@ h1 {
 .paddingHeader{
   padding-top: 50px;
 }
+
+.imageDiv {
+  box-shadow: 7px 7px 7px 7px #ffb72b;
+  padding:20px;
+  border-radius: 20px;
+}
+.singleRecipeImg{
+  border-radius: 20px;
+}
   
 /* **************************** */
 .searchButton{

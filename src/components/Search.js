@@ -1,7 +1,7 @@
 import React from 'react'
 
 const inputStyles = {
-  padding: "10px",
+  padding: "12px",
   border: "3px solid #f8c146",
   boxShadow: "0px 0px 0px",
   borderColor: "#f8c146",

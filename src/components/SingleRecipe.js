@@ -32,16 +32,25 @@ function SingleRecipe() {
   if (!isLoaded) return <h2>Loading...</h2>;
   
 return (
+
   <>
   <div key={singleRecipe.id} className="row recipeBox">
     <div  className="column left" >
-    <div className="paddingClass">
-    <img src={singleRecipe.image} alt={singleRecipe.name} height="400"  width= "400"/>
-      </div>
+      <div className="paddingClass">
+        <div className = "imageDiv">
+          <img 
+          className = "singleRecipeImg"
+          src={singleRecipe.image} 
+          alt={singleRecipe.name} 
+          height="400"  
+          width= "400"/>
+        </div>
+        </div>
       </div>
     <div className="column right">
     
     <h3 className="recipeName"> {singleRecipe.name}</h3>
+
     <h3>Ingredients:</h3>
     <ul> {singleRecipe.ingredients.map((ingredient,idx) =>
       <li key={idx}>{ingredient}</li>
