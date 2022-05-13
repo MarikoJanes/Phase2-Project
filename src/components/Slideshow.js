@@ -19,7 +19,7 @@ function Slideshow({recipeData}) {
 
     const responsive = {
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
+          breakpoint: { max: 5000, min: 1024 },
           items: 4,
           slidesToSlide: 3 // optional, default to 1.
         },
