@@ -42,8 +42,6 @@ console.log(recipeData)
               <SingleRecipe />
             </Route>
           </Switch>
-        <Footer/> 
-
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import Footer from './Footer';
 
 function SingleRecipe() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,6 +29,7 @@ function SingleRecipe() {
   if (!isLoaded) return <h2>Loading...</h2>;
   
 return (
+  <>
   <div key={singleRecipe.id} className="row">
     <div  className="column" >
     <div className="paddingClass">
@@ -57,7 +59,8 @@ return (
       })}
       </div>
   </div> 
-
+  <Footer />
+  </>
 )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-// import { Card } from 'react-bootstrap';
+import Footer from './Footer';
 
 
 function RecipeList({recipeData}) {
@@ -23,6 +23,7 @@ function RecipeList({recipeData}) {
       <div className='cards lists'>
         {lists}
       </div>
+      <Footer/> 
     </div>
    
   )

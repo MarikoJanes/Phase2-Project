@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
 
+
 function ShowSearchedRecipe({searchedRecipe}) {
     const history = useHistory();
 

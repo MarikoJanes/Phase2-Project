@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useHistory } from "react-router-dom";
+import Footer from './Footer';
 
 
     const inputStyles = {
@@ -84,31 +85,30 @@ function PostRecipeForm( {refreshData}) {
     
 
   return (
-   <form onSubmit={handleSubmit}>
-        <label className='otherLabels'>Recipe Name: </label>
-        <input  style={inputStyles} onChange={handleChange} type="text" name="name" value={formData.name} />
-        <br></br>
-        <label className='otherLabels'>Image URL: </label>
-        <input style={inputStyles} onChange={handleChange} type="text" name="image" value={formData.image} />
-        <br></br>
-        <label className='otherLabels'>Ingredients: </label>
-        <input style={inputStyles} onChange={handleChange} type="text" name="ingredients" value={formData.ingredients} />
-        <p className='message'>separate each ingredient by ", " ex) 2eggs, salt</p>
+      <>
+         <form onSubmit={handleSubmit}>
+            <label className='otherLabels'>Recipe Name: </label>
+            <input  style={inputStyles} onChange={handleChange} type="text" name="name" value={formData.name} />
+                <br></br>
+             <label className='otherLabels'>Image URL: </label>
+             <input style={inputStyles} onChange={handleChange} type="text" name="image" value={formData.image} />
+                 <br></br>
+             <label className='otherLabels'>Ingredients: </label>
+             <input style={inputStyles} onChange={handleChange} type="text" name="ingredients" value={formData.ingredients} />
+             <p className='message'>separate each ingredient by ", " ex) 2eggs, salt</p>
         
-        <br></br>
-        <label>Instructions: </label>
+                <br></br>
+             <label>Instructions: </label>
         
-        <div>
-            {stepInput.map((Step, i) => {
+             <div>
+                {stepInput.map((Step, i) => {
                                 return <div key={i+1}><label className='stepLabel'>Step {i+1}: </label><textarea style={inputStyles} onChange={(e)=> handleStep(e,i)} type="text" name={"Step"+(i+1)} value={Step[stepNum+1+""]}  /> </div>})}
-            <button className="formButton addButton" onClick={handleClick} type="button"> + </button>
-        </div>
-       
-        
-        <input className="formButton submitButton"  type="submit" value="add a recipe" />
-    
-        
-   </form>
+                <button className="formButton addButton" onClick={handleClick} type="button"> + </button>
+            </div>
+            <input className="formButton submitButton"  type="submit" value="add a recipe" />
+        </form>
+        <Footer/> 
+   </>
   )
 }
 
